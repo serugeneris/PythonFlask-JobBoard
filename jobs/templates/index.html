@@ -1,4 +1,18 @@
+<!doctype html>
+<html>
+
 {% extends 'layout.html'%}
+
 {% block content %}
-<h1>Jobs</h1>
+{% call show_jobs(jobs) %}
+  <div class="columns">
+    <div class="column">
+      <h1>Jobs</h1>
+    </div>
+    <div class="column is-one-fifth">
+    </div>
+  </div>
+{% endcall %}  
 {% endblock %}
+
+</html>
